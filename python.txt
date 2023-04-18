@@ -1,0 +1,53 @@
+li={"ram":1,"shyam":3,"gaam":5}//list 
+print(li)
+yy=({"name":"ram","age":20},{"name":"shay","age":30})//dict inisde tuple
+print(yy[0]["name"])//retriving
+
+lis=["ram","shyam"]
+count=",".join(lis)
+print(count)
+//////
+set1={}
+set2={}
+num=set1.symmetric_difference(set2)
+num=set1.difference(set2)
+num=set1.union(set2)
+num=set1.intersection(set2)
+set1.add(2)
+set1.remove(2)
+
+---------------------------------------------
+List Comprehension in Python
+in case if you want to mulitiply 
+all the no of existing list by 2 
+
+there is a sorter method which we can do
+
+nums=[1,2,3,4]
+doub=[num*2 for num in nums]
+print(doub)
+
+
+agee=[f"My friend {age}." for age in nums]
+print(agee)
+------------------------------------------------------
+List Comprehension
+ages=[22,33,44,55,66]
+num=[age for age in ages if age%2==1]
+print(num)
+
+
+
+fri=["Ram","shayam","Ghan"]
+sea=["ram","shayam"]
+fri=[f.lower() for f in fri]
+for i in sea:
+    if i in fri:
+        print(i)
+--------------------------------------------------
+taaking input from user 
+num=input("Enter\n").split()
+num=[int(nums) for nums in num]
+print(num)
+----------------------------------------
+

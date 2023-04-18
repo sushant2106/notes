@@ -1,0 +1,7 @@
+constructor is not a member of a class
+
+Encapsulation
+https://www.geeksforgeeks.org/encapsulation-in-java/
+
+
+

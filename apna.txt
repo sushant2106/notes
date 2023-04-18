@@ -1,0 +1,61 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+ 
+ 
+public class MapEx {
+ 
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        
+        Map<Integer,String> m = new HashMap<>();
+        m.put(1, "One");
+        m.put(2, "Two");
+        System.out.println(m);
+        
+        System.out.println("***************");
+        
+        System.out.println("Key : " + m.keySet());
+        System.out.println("Value : " + m.values());
+        
+        System.out.println("***************");
+        
+        System.out.println("Entry Set : " + m.entrySet());
+        
+        System.out.println("***************");
+        
+        Set <Map.Entry<Integer,String>> s = m.entrySet();
+        
+        Iterator <Map.Entry<Integer,String>> i = s.iterator();
+        
+        while(i.hasNext()) {
+            Map.Entry<Integer,String> m1 = i.next();
+            System.out.println(m1.getKey() + " : " + m1.getValue());
+        }
+        
+ 
+    }
+ 
+}
+-------------------------------------------------------------------
+[6:57 PM] Divya T C
+    //Generic Example 3
+
+class DemoClass{​​
+    public <T> void genMet(T data) {​​
+        System.out.println("Generic Method");
+        System.out.println("Data : " + data);
+    }​​
+}​​
+public class GenericDemo {​​
+    public static void main(String[] args) {​​
+        // TODO Auto-generated method stub
+        
+        DemoClass demo = new DemoClass();
+        demo.<String>genMet("Generic Example");
+        
+        demo.<Integer>genMet(23);
+    }​​
+}​​
+ 
